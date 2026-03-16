@@ -1,0 +1,10 @@
+@keyframes rise{
+  from{
+    transform: translateY(0);
+    opacity:1;
+  }
+  to{
+    transform: translateY(-110vh);
+    opacity:0.7;
+  }
+}

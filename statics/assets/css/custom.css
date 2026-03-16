@@ -1,0 +1,232 @@
+li{
+    list-style: none;
+}
+body{
+    margin:0;
+    font-family:sans-serif;
+    background: url('/statics/assets/img/bg-5.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed; /* fondo fijo */
+    min-height:100dvh;
+    background-color:rgb(247, 247, 238) ;
+    display:flex;
+    justify-content:center;
+    }
+    
+    .main-card{
+        max-width:500px;
+        width:100%;
+        background:rgba(0,0,0,0.65);
+        border-radius:30px;
+        padding:20px;
+        color:white;
+        backdrop-filter:blur(8px);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:576px){
+
+        .main-card{
+            max-width:100%;
+            border-radius:0;
+            margin:0;
+            width:100%;
+            min-height:100dvh;
+        }
+      
+      }
+    
+    .profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    }
+    
+    .social-icons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    color:white;
+    background:black;
+    margin:0 6px;
+    font-size:18px;
+    text-decoration:none;
+    }
+    
+    .post-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    margin-top:20px;
+    }
+    
+    .post-card img{
+    width:100%;
+    display:block;
+    }
+    
+    .post-text{
+    position:absolute;
+    bottom:10px;
+    left:15px;
+    color:white;
+    font-weight:bold;
+    text-shadow:0 0 10px black;
+    }
+    .mini-avatar{
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+    
+    .icon-circle{
+        width:36px;
+        height:36px;
+        background:rgba(54, 54, 54, 0.6);
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:14px;
+    }
+    
+    .text-limit-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.2em;
+      min-height: 3.6em; /* 3 líneas reservadas */
+    }
+
+    .text-limit-2{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .text-col{
+        min-width:0;      /* permite que el texto se encoja */
+    }
+    
+    .card-img-horizontal{
+        height:110px;
+        width:120px;
+        object-fit:cover;
+        min-width:80px; 
+        padding: 10px;
+    }
+    
+    .image-container{
+        position: relative;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+    }
+    
+    .image-container img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .text-container{
+        min-width:0;       /* permite que el texto se encoja */
+        overflow:hidden;   /* oculta lo que no cabe */
+    }
+    
+    .social-badge{
+        position:absolute;
+        bottom:8px;
+        right:8px;
+        width:28px;
+        height:28px;
+        background:rgba(0,0,0,0.6);
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:12px;
+    }
+
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.verify{
+    color:#2da6ff;
+}
+
+.card-zoom {
+    transition: transform 0.25s ease;
+    justify-content:center;
+}
+
+
+.card-zoom:hover {
+    transform: scale(1.03);
+}
+
+
+.btn-hb {
+    cursor: pointer;
+  }
+
+  .card-img-horizontal{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.card-body{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* pulse + glow */
+
+.featured-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  
+  .featured-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    box-shadow: 0 0 0 0 rgba(255,0,90,0.7);
+    animation: pulseGlow 2s infinite;
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255,0,90,0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(255,0,90,0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255,0,90,0);
+    }
+  }
+
+  /* empujar tarjeta a la izquierda */
+  .card-narrow-right{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+

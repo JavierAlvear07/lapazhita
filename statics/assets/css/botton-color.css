@@ -1,0 +1,38 @@
+/* TikTok suave */
+.bg-tiktok{
+    background: linear-gradient(135deg, #ff8fb3, #8ff1ea);
+}
+
+/* Instagram suave */
+.bg-instagram{
+    background: linear-gradient(135deg, #ffd6a5, #ffb3c6, #cdb4db);
+}
+
+/* Facebook suave */
+.bg-facebook{
+    background: linear-gradient(135deg, #8fb8ff, #c3d9ff);
+}
+
+/* X (Twitter) suave */
+.bg-x{
+    background: linear-gradient(135deg, #5a5a5a, #bdbdbd);
+}
+
+/* Reddit suave */
+.bg-reddit{
+    background: linear-gradient(135deg, #ff9a76, #ffd6a5);
+}
+
+/* Telegram suave */
+.bg-telegram{
+    background: linear-gradient(135deg, #7cc7f2, #b8e3ff);
+}
+
+/* PayPal suave */
+.bg-paypal{
+    background: linear-gradient(135deg,#e6f4ff,#bfe6ff,#8ed2ff);
+}
+
+.bg-reddit{
+    background: linear-gradient(135deg, #ff9a6b, #ffd1b8);
+}
