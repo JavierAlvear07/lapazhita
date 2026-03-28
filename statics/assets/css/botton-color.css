@@ -32,7 +32,11 @@
 .bg-paypal{
     background: linear-gradient(135deg,#e6f4ff,#bfe6ff,#8ed2ff);
 }
-
+/* reddit suave */
 .bg-reddit{
     background: linear-gradient(135deg, #ff9a6b, #ffd1b8);
+}
+/* sponsor suave */
+.bg-esponsor{
+    background: linear-gradient(135deg, #f7d774, #f2b705);
 }
