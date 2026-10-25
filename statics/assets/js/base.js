@@ -1,28 +1,20 @@
-//shake object effect
-const boxes = document.querySelectorAll(".shake-box");
-    
-function shake() {
-    boxes.forEach(box => {
+const shareButton = document.getElementById("shareBtn");
+const shareStatus = document.getElementById("shareStatus");
+let shareStatusTimeout;
 
-    box.classList.remove("animate__animated","animate__shakeX");
-    void box.offsetWidth; // fuerza reinicio de animación
-
-    box.classList.add("animate__animated","animate__shakeX");
-
-    });
-}
-    
-setInterval(shake, 5000);
-
-// Share media social link
-document.getElementById("shareBtn").addEventListener("click", async () => {
-
-    if (navigator.share) {
-
-    await navigator.share({
-        url: window.location.href
-    });
-
+shareButton.addEventListener("click", async () => {
+    try {
+        if (navigator.share) {
+            await navigator.share({ title: document.title, url: window.location.href });
+        } else {
+            await navigator.clipboard.writeText(window.location.href);
+            shareStatus.textContent = "Enlace copiado";
+            clearTimeout(shareStatusTimeout);
+            shareStatusTimeout = setTimeout(() => { shareStatus.textContent = ""; }, 3000);
+        }
+    } catch (error) {
+        if (error.name !== "AbortError") {
+            shareStatus.textContent = "Copia el enlace desde la barra de direcciones para compartir.";
+        }
     }
-
 });
