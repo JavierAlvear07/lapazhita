@@ -161,3 +161,17 @@ a:focus-visible { outline: 3px solid #fff; outline-offset: 6px; }
     font-size: 14px;
 }
 #shareStatus:not(:empty) { padding: 12px 16px; }
+
+@media (max-width: 576px) {
+    body {
+        padding: 0;
+        background: #121b22;
+    }
+    .landing {
+        width: 100%;
+        min-height: 100svh;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
