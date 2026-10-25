@@ -4,6 +4,7 @@ document.querySelectorAll(".btn-hb").forEach(btn => {
   const url = "https://hoo.be/paziitax";
 
   btn.addEventListener("click", function(e) {
+    e.preventDefault();
 
     if (sessionStorage.getItem("adultWarningShown") === "true") {
       window.location.href = url;
